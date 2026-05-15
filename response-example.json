@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "timestamp": "2026-05-15T09:00:00.000Z",
+  "payload": {
+    "received": {
+      "customerId": "12345",
+      "flowId": "test-flow",
+      "channel": "voice",
+      "attributes": {
+        "language": "it",
+        "brand": "demo"
+      }
+    },
+    "note": "Messaggio ricevuto correttamente da Render"
+  }
+}
