@@ -8,7 +8,8 @@ const API_KEY = process.env.API_KEY || '';
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'ok',
-    service: 'genesys-render-api'
+    service: 'genesys-render-api',
+    "api-key":  API_KEY
   });
 });
 
