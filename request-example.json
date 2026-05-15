@@ -1,0 +1,9 @@
+{
+  "customerId": "12345",
+  "flowId": "test-flow",
+  "channel": "voice",
+  "attributes": {
+    "language": "it",
+    "brand": "demo"
+  }
+}
