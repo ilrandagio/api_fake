@@ -47,6 +47,31 @@ app.post('/genesys', async (req, res) => {
   }
 });
 
+app.post('/inputCheck', async (req, res) => {
+  try {
+    if (API_KEY) {
+      const providedKey = req.header('x-api-key');
+      if (!providedKey || providedKey !== API_KEY) {
+        return res.status(401).json({
+          success: false,
+          message: 'Unauthorized'
+        });
+      }
+    }
+
+    const input = req.body;
+
+
+    return res.status(200).json(input);
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: 'Internal Server Error',
+      detail: error.message
+    });
+  }
+});
+
 app.use((req, res) => {
   res.status(404).json({
     success: false,
