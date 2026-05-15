@@ -1,0 +1,15 @@
+{
+  "name": "genesys-render-api",
+  "version": "1.0.0",
+  "description": "Simple POST API for Genesys Cloud deployed on Render",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
